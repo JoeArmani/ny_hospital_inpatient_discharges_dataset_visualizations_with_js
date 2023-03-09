@@ -1,6 +1,7 @@
 {
   "name": "ny_hospital_inpatient_discharges_dataset_visualizations_with_js",
   "version": "1.0.0",
+  "homepage": "https://joearmani.github.io/ny_hospital_inpatient_discharges_dataset_visualizations_with_js/",
   "description": "",
   "main": "main.js",
   "type": "module",
