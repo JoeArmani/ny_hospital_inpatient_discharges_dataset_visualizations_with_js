@@ -1,0 +1,16 @@
+{
+  "name": "ny_hospital_inpatient_discharges_dataset_visualizations_with_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.2.1"
+  }
+}
