@@ -16,10 +16,10 @@ const query =
 
 const jsonResponse = await fetchApiData(query)
 
-// Hide the spinner when the page has finished loading
-window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.spinner').style.display = 'none';
-});
+// Hide the spinner when the fetch api returns
+document.querySelector('.spinner').style.display = 'none';
+
+
 
 
 // build the charts
