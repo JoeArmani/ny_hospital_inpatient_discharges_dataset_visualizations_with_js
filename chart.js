@@ -1,4 +1,12 @@
-export function buildChart1 (data) {
+export function buildCharts (data) {
+  buildChart1(data)
+  buildChart2(data)
+  buildChart3(data)
+  buildChart4(data)
+}
+
+
+function buildChart1 (data) {
   const ctx = document.getElementById('chart-1')
 
   let ageModel = [
@@ -82,7 +90,7 @@ export function buildChart1 (data) {
 
 
 
-export function buildChart2 (data) {
+function buildChart2 (data) {
   const ctx = document.getElementById('chart-2')
 
   let raceModel = [
@@ -152,7 +160,7 @@ export function buildChart2 (data) {
 }
 
 
-export function buildChart3 (data) {
+function buildChart3 (data) {
   const ctx = document.getElementById('chart-3')
 
   let genderModel = [
@@ -207,7 +215,7 @@ export function buildChart3 (data) {
   })
 }
 
-export function buildChart4 (data) {
+function buildChart4 (data) {
   const ctx = document.getElementById('chart-4')
 
   let severityModel = [
