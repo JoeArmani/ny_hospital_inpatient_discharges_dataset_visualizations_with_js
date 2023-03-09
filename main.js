@@ -11,7 +11,7 @@ const query =
 
 const jsonResponse = await fetchApiData(query)
 
-// hide the loading spinner
+// hide the loading spinner when the data is ready
 hideSpinner()
 
 // build the charts
