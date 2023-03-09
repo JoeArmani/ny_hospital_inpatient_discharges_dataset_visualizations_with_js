@@ -1,9 +1,14 @@
 import { fetchApiData } from './repository.js'
 import { buildCharts } from './chart.js'
-import { showSpinner, hideSpinner } from './spinner.js'
 
-// show the loading spinner
-showSpinner()
+// Hide the spinner initially
+document.querySelector('.spinner').style.display = 'none';
+
+// Show the spinner when the page is loading
+window.addEventListener('load', function() {
+  document.querySelector('.spinner').style.display = 'block';
+});
+
 // build the query
 // this gets added to the base url in fetchApiData() - see repository.js
 const query =
@@ -11,8 +16,11 @@ const query =
 
 const jsonResponse = await fetchApiData(query)
 
-// hide the loading spinner when the data is ready
-hideSpinner()
+// Hide the spinner when the page has finished loading
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.spinner').style.display = 'none';
+});
+
 
 // build the charts
 buildCharts(jsonResponse)
